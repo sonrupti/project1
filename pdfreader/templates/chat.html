@@ -1,0 +1,13 @@
+<h1>PDF Chatbot</h1>
+
+<form method="post">
+    {% csrf_token %}
+
+    <input type="text" name="question">
+
+    <button type="submit">
+        Ask
+    </button>
+</form>
+
+<p>{{ answer }}</p>
